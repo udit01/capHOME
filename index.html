@@ -1,98 +1,43 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campus Ambassador Program RDV'17</title>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="bower_components/themify-icons/css/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Titillium+Web|Varela+Round|Lato|Montserrat|Droid+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" type="text/css">
 
-<head>
-  <meta name="viewport" content="width=device-width, maximum-scale=1">
-
-  <title>Homepage CAP</title>
-  <!--Remember to include the two links below locally before deploying the website-->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
-
-  <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
-  <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
-  <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
-  <link href="assets/css/styleNew.css" rel="stylesheet" type="text/css">
-
-  <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
-
-  <script type="text/javascript" src="assets/js/jquery.1.8.3.min.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-  <script type="text/javascript" src="assets/js/jquery-scrolltofixed.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.isotope.js"></script>
-  <script type="text/javascript" src="assets/js/wow.js"></script>
-  <script type="text/javascript" src="assets/js/classie.js"></script>
-  <!-- <script src="contactform/contactform.js"></script> -->
-
-  <!-- =======================================================
-  		Author: Udit Jain
-  		Author URL: https://github.com/udit01
-  ======================================================= -->
-
-</head>
-
-<body style="background-image:url(assets/img/Eiffel_tower.png) ;    background-size:cover;    background-size:100% 100vh;">
-
-  <header class="header" id="header">
-    <!--header-start-->
-
-    <div class="container" style="">
-      <div class="NormalCharacterStyle1">
-        BRCA IIT Delhi's
-      </div>
-
-      <div class="bigText">
-        RENDEZVOUS
-      </div>
-      <div class="bigText" id="r2017">
-         2017
-      </div>
-    </div>
-
-    <div class="container Vertical_Rectangle">
-
-      <div class="capText">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <span style="margin:auto; align:center">CAMPUS</span>
-        <br>
-        <span style="margin:auto; align:center">AMBASSADOR</span>
-        <br>
-        <span style="margin:auto; align:center">PROGRAM</span>
-      </div>
-
-    </div>
-
-    <img src="assets/CAPassetsFinal/before/RDVlogo-01.svg" alt="RDV_Logo" class="RDV_Logo">
-
-  </header>
-  <!--header-end-->
-
-  <a href="#">
-    <div class="registerButton">
-      <div class="Button_inner_boundary"></div>
-      <div class="Button_outer_boundary_1_"></div>
-      <button class="button" id="loginButton"> <span class="Register_Login_text">Register</span> </button>
-      <img src="assets/CAPassetsFinal/before/Side_arrow.png" id="Side_arrow">
-    </div>
-  </a>
-
-  <a href="#">
-        <img src="assets/CAPassetsFinal/before/Down_arrow_2_.png" alt="Down_arrow" class="Down_arrow_2_">
-      </a>
-  <script type="text/javascript">
-    $(document).ready(function(e) {
-
-    });
-  </script>
+  </head>
+  <body ng-app="app" ng-controller="MainCtrl">
 
 
-</body>
+
+    <div data-ng-view = "" ng-cloak>
+
+
+
+
+  </body>
+
+
+
+  <!-- scripts -->
+  <script type='text/javascript' src="bower_components/angular/angular.min.js"></script>
+  <script type='text/javascript' src="bower_components/angular-route/angular-route.min.js"></script>
+  <script type='text/javascript' src="bower_components/angular-material/angular-material.min.js"></script>
+  <script type='text/javascript' src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script type='text/javascript' src="bower_components/angular-aria/angular-aria.min.js"></script>
+  <script type='text/javascript' src="bower_components/angular-messages/angular-messages.min.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+  <script src="bower_components/angular-scroll-animate/dist/angular-scroll-animate.js"></script>
+  <script type='text/javascript' src="main.js"></script>
+  <script type='text/javascript' src="js/cap.js"></script>
+
+
 
 </html>
