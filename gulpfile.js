@@ -28,10 +28,6 @@ gulp.task('build-images', function() {
   return gulp.src(['images/**'])
     .pipe(gulp.dest('dist/images'));
 });
-gulp.task('build-svgs', function() {
-  return gulp.src(['svgs/**'])
-    .pipe(gulp.dest('dist/svgs'));
-});
 gulp.task('build-fonts', function () {
   return gulp.src('fonts/**')
     .pipe(gulp.dest('dist/fonts'));

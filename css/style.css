@@ -84,3 +84,72 @@
 .test {
   border: 1px solid red;
 }
+
+.home-main {
+  height: 100vh;
+  background-image: url("../images/back.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-row {
+  padding: 56px 100px;
+}
+.logo-row .logo-right {
+  text-align: right;
+}
+.logo-row .logo-right .right-box {
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-color: white;
+  border-width: 2px;
+  width: 152px;
+  height: 296px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+  padding: 15px;
+  position: relative;
+}
+.logo-row .logo-right .right-box span {
+  border: 1px solid red;
+  position: absolute;
+  bottom: 10px;
+  left: 0%;
+  font-weight: 400;
+  font-family: "Comfortaa", sans-serif;
+  color: #ffffff;
+  line-height: 200%;
+  font-size: 16px;
+}
+.logo-row .logo-right .right-box img {
+  margin: 0 auto;
+}
+.logo-row .logo-left span {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Comfortaa", sans-serif;
+  margin: 15px 0px;
+}
+.logo-row .logo-left h1 {
+  font-size: 4rem;
+  margin: 15px 0px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.register-button .button-above {
+  border: 2px solid #ffffff;
+  width: 265px;
+  height: 73px;
+  padding: 5px 3px;
+}
+.register-button .button-above a {
+  border: 2px solid #ffffff;
+  height: 100%;
+  width: 100%;
+  font-size: 24px;
+}
+
+.down-arrow {
+  margin-top: 15vh;
+}
