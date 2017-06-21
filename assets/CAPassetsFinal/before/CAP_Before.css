@@ -1,0 +1,119 @@
+@charset "utf-8";
+	.NormalCharacterStyle1
+{
+	font-family : Comfortaa;
+	font-size : 24px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+	text-shadow : 7px 7px 5px rgba(0, 0, 0, 0.3);
+}
+.NormalCharacterStyle2
+{
+	font-family : Comfortaa;
+	font-size : 16px;
+	line-height : 29px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+	text-shadow : 0px 0px 5px rgba(0, 0, 0, 0.35);
+}
+.Button_inner_boundary
+{
+	border-style : Solid;
+	border-color : #FFFFFF;
+	border-color : rgba(255, 255, 255, 1);
+	border-width : 2px;
+	position : absolute ;
+	left : 552px;
+	top : 452px;
+	width : 265px;
+	height : 73px;
+	box-shadow : 0px 0px 5px rgba(0, 0, 0, 0.35);
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color='#000000') ;
+}
+.Button_outer_boundary_1_
+{
+	border-style : Solid;
+	border-color : #FFFFFF;
+	border-color : rgba(255, 255, 255, 1);
+	border-width : 2px;
+	position : absolute ;
+	left : 548px;
+	top : 448px;
+	width : 273px;
+	height : 81px;
+	box-shadow : 0px 0px 5px rgba(0, 0, 0, 0.35);
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color='#000000') ;
+}
+.NormalCharacterStyle3
+{
+	font-family : Comfortaa;
+	font-size : 24px;
+	line-height : 72px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+}
+.Vertical_Rectangle
+{
+	border-style : Solid;
+	border-color : #FFFFFF;
+	border-color : rgba(255, 255, 255, 1);
+	border-width : 2px;
+	position : absolute ;
+	left : 1109px;
+	top : 72px;
+	width : 152px;
+	height : 296px;
+	box-shadow : 0px 0px 5px rgba(0, 0, 0, 0.35);
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color='#000000') ;
+}
+.NormalCharacterStyle
+{
+	font-family : Comfortaa;
+	font-weight : bold;
+	font-size : 72px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+	text-shadow : 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.Eiffel_tower
+{
+	background-image : url(Eiffel_tower.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 0px;
+	top : -1px;
+	width : 1367px;
+	height : 770px;
+}
+.Side_arrow
+{
+	background-image : url(Side_arrow.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 787px;
+	top : 479px;
+	width : 12px;
+	height : 21px;
+}
+.Down_arrow_2_
+{
+	background-image : url(Down_arrow_2_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 641px;
+	top : 632px;
+	width : 87px;
+	height : 59px;
+}
+.RDV_Logo
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 1148px;
+	top : 89px;
+	width : 74px;
+	height : 113px;
+	box-shadow : 0px 0px 5px rgba(0, 0, 0, 0.35);
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color='#000000') ;
+}

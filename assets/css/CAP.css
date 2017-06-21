@@ -1,0 +1,94 @@
+@charset "utf-8";
+	.NormalCharacterStyle2
+{
+	font-family : Comfortaa;
+	font-size : 24px;
+	line-height : 72px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+}
+.Button_outer_boundary
+{
+	border-style : Solid;
+	border-color : #FFFFFF;
+	border-color : rgba(255, 255, 255, 1);
+	border-width : 2px;
+	width : 360px;
+	height : 99px;
+}
+.Button_inner_boundary
+{
+	border-style : Solid;
+	border-color : #FFFFFF;
+	border-color : rgba(255, 255, 255, 1);
+	border-width : 2px;
+	width : 352px;
+	height : 91px;
+}
+.Layover
+{
+	background : #000000;
+	background : rgba(0, 0, 0, 1);
+	opacity : 0.4;
+	width : 1366px;
+	height : 768px;
+	filter: alpha(opacity=40) progid:DXImageTransform.Microsoft.Alpha(opacity=40) ;
+}
+.NormalCharacterStyle
+{
+	font-family : Myriad Pro;
+	font-size : 72px;
+	line-height : 84px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+	text-shadow : 7px 7px 5px rgba(0, 0, 0, 0.3);
+}
+.Vertical_Rectangle
+{
+	border-style : Solid;
+	border-color : #FFFFFF;
+	border-color : rgba(255, 255, 255, 1);
+	border-width : 2px;
+	width : 152px;
+	height : 296px;
+}
+.NormalCharacterStyle1
+{
+	font-family : Comfortaa;
+	font-size : 16px;
+	line-height : 29px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+}
+.Scroll_Down_arrow
+{
+	border-style : Solid;
+	border-color : #FFFFFF;
+	border-color : rgba(255, 255, 255, 1);
+	border-width : 3px;
+	width : 0px;
+	height : 57px;
+}
+.Login_Arrow
+{
+	border-style : Solid;
+	border-color : #FFFFFF;
+	border-color : rgba(255, 255, 255, 1);
+	border-width : 1px;
+	width : 27px;
+	height : 0px;
+}
+.RDV_Logo
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	width : 74px;
+	height : 113px;
+}
+.Eiffel_tower
+{
+	background-image : url(Eiffel_tower.png);
+	background-repeat : no-repeat;
+	width : 1367px;
+	height : 769px;
+}
