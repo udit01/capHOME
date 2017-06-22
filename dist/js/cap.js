@@ -10,6 +10,18 @@ $scope.chances = [
           "Passes and discount coupons as per marketing deals"
 ];
 
+$scope.animation = {};
+  $scope.animation.current = 'fadeInUp';
+  $scope.animation.previous = $scope.animation.current;
+  $scope.ElementIn = function($el) {
+		$el.removeClass('not-visible');
+		$el.addClass('animated ' + $scope.animation.current);
+	};
+	$scope.animateElementOut = function($el) {
+		$el.addClass('not-visible');
+		$el.removeClass('animated ' + $scope.animation.current);
+	};
+
 });
 
 app.controller('MainCtrl', function($scope,$document,$timeout, $mdSidenav, $log) {

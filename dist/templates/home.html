@@ -11,10 +11,10 @@
   <section id = "about">
 
       <div class="custom-card" layout = "row" layout-wrap layout-xs = "column">
-        <div class="" flex = "40">
+        <div class="not-visible" when-visible="ElementIn" flex = "40">
           <img src="images/guitar.png" alt="">
         </div>
-        <div class="" flex = "60">
+        <div class=" not-visible" when-visible="ElementIn" flex = "60">
           <h1>About Us</h1>
           <div class="" layout = "row">
             <img src="images/textsep.svg" alt="">
@@ -36,25 +36,25 @@
 
   <section id = "incentives" layout-align = "center center">
     <div class="custom-card1" >
-      <h1>What is College Ambassador Program?</h1>
+      <h1 class="not-visible" when-visible="ElementIn">What is College Ambassador Program?</h1>
       <div class="center" layout = "row" >
         <img src="images/textsep.svg" alt="">
       </div>
-      <div class=" center inc-text" layout = "row">
+      <div class=" not-visible center inc-text" when-visible="ElementIn" layout = "row">
         The Campus Ambassadors Program (CAP) is the premier publicity program of RDV and provides an opportunity to students from colleges all over India to get involved in the making of North India&#39;s largest college fest. Campus Ambassadors serve as
           the face of Rendezvous in their college and get hands on experience in institute level coordination, fest organization, teamwork, event management and media relations.
           <br>
           Little to give, so much to gain!
       </div>
-      <div class=" inc-text" layout = "row">
+      <div class=" not-visible inc-text" when-visible="ElementIn" layout = "row">
         For details check FAQs Section
       </div>
 
       <h1>What's in it for you?</h1>
-      <div class="center" layout = "row" >
+      <div class=" center" layout = "row" >
         <img src="images/textsep.svg" alt="">
       </div>
-      <ul ng-repeat = "x in chances">
+      <ul class="not-visible" when-visible="ElementIn" ng-repeat = "x in chances">
         <li>{{x}}</li>
 
       </ul>
@@ -65,11 +65,11 @@
 
   <section id = "contact">
     <div class="custom-card2" layout-align = "center center">
-      <h1>Contact Us</h1>
+      <h1 class="not-visible" when-visible="ElementIn">Contact Us</h1>
       <div class="center" layout = "row" >
         <img src="images/textsep.svg" alt="">
       </div>
-      <div  layout = "row" >
+      <div class = "not-visible" when-visible="ElementIn" layout = "row" >
         <div class="center" flex = "33">
           <h2>Aishwarya Smriti</h2>
           <p>Email:</p>
@@ -93,11 +93,11 @@
 
   <section id = "register">
     <div class="custom-card2 " layout = "row">
-      <div class="valign-wrapper" flex = "60" flex-offset = "10">
+      <div class="valign-wrapper not-visible" when-visible="ElementIn" flex = "60" flex-offset = "10">
         <span>Please note that Rendezvous will not post on your behalf</span>
       </div>
 
-      <div class="" flex = "30">
+      <div class="not-visible" when-visible="ElementIn" flex = "30">
         <div class="center" layout = "row" layout-align = "center center">
           <a class="btn">
             Register Via Facebok
