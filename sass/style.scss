@@ -345,6 +345,20 @@ body{
 
 }
 
+.custom-card2{
+    background: #ffffff;
+    z-index: 10;
+    font-size: 16px;
+    line-height: 27px;
+    color: #9da6b8;
+    font-family: $open-sans;
+    padding: 24px;
+    font-weight: 300;
+    min-height: 30vh;
+    box-shadow: 0 2px 5px 0 #E0E0E0;
+
+}
+
 #about{
   padding: 72px 15px 15px 15px;
 
@@ -358,6 +372,13 @@ body{
     font-family: $open-sans-condensed;
     line-height: 36px;
     color: $text-color;
+  }
+
+  h1{
+    font-size: 36px;
+    color: $text-color;
+    font-family: $open-sans-condensed;
+    text-align: left !important;
   }
 }
 
@@ -378,4 +399,65 @@ body{
     line-height: 36px;
     color: $text-color;
   }
+
+
+
+  ul{
+    font-size: 24px;
+    font-family: $open-sans-condensed;
+    line-height: 36px;
+    color: $text-color;
+
+  }
+}
+
+h1, h2 {
+  text-align: center;
+  color: $text-color;
+  font-family: $open-sans-condensed;
+}
+h1{
+  font-size: 36px;
+}
+h2{
+  font-size: 30px;
+}
+#contact{
+  img{
+    margin: 0 auto;
+  }
+  p{
+    color: $text-color;
+    font-family: $open-sans-condensed;
+    font-size: 26px;
+    line-height: 50%;
+  }
+
+  padding: 15px;
+
+}
+
+#register{
+  padding: 15px;
+
+  span{
+    font-size: 36px;
+    color: $text-color;
+    font-family: $open-sans-condensed;
+  }
+
+  .btn{
+    border: 2px solid orange;
+    padding: 15px;
+    font-size: 36px;
+    color: $text-color;
+    font-family: $open-sans-condensed;
+    margin: 15px;
+  }
+
+
+}
+
+#social{
+    padding: 15px;
 }

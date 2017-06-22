@@ -277,6 +277,19 @@ body {
   box-shadow: 0 2px 5px 0 #E0E0E0;
 }
 
+.custom-card2 {
+  background: #ffffff;
+  z-index: 10;
+  font-size: 16px;
+  line-height: 27px;
+  color: #9da6b8;
+  font-family: "Open Sans", sans-serif;
+  padding: 24px;
+  font-weight: 300;
+  min-height: 30vh;
+  box-shadow: 0 2px 5px 0 #E0E0E0;
+}
+
 #about {
   padding: 72px 15px 15px 15px;
 }
@@ -288,6 +301,12 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
   line-height: 36px;
   color: #3D405B;
+}
+#about h1 {
+  font-size: 36px;
+  color: #3D405B;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: left !important;
 }
 
 .home {
@@ -305,4 +324,58 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
   line-height: 36px;
   color: #3D405B;
+}
+#incentives ul {
+  font-size: 24px;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 36px;
+  color: #3D405B;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #3D405B;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+#contact {
+  padding: 15px;
+}
+#contact img {
+  margin: 0 auto;
+}
+#contact p {
+  color: #3D405B;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 26px;
+  line-height: 50%;
+}
+
+#register {
+  padding: 15px;
+}
+#register span {
+  font-size: 36px;
+  color: #3D405B;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+#register .btn {
+  border: 2px solid orange;
+  padding: 15px;
+  font-size: 36px;
+  color: #3D405B;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 15px;
+}
+
+#social {
+  padding: 15px;
 }

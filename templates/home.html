@@ -1,9 +1,9 @@
 <div class="home" ng-controller = "HomeCtrl">
   <nav class="nav-bar valign-wrapper hide-on-med-and-down">
       <ul>
-        <li><a>Home</a></li>
-        <li><a>Home</a></li>
-        <li><a>Home</a></li>
+        <li><a href = "/#!/home/#about" du-smooth-scroll du-scrollspy>Home</a></li>
+        <li><a href = "/#!/home/#incentives" du-smooth-scroll du-scrollspy>Home</a></li>
+        <li><a href = "/#!/home/#contact" du-smooth-scroll du-scrollspy>Home</a></li>
 
       </ul>
   </nav>
@@ -35,7 +35,7 @@
   </section>
 
   <section id = "incentives" layout-align = "center center">
-    <div class="custom-card1 center" >
+    <div class="custom-card1" >
       <h1>What is College Ambassador Program?</h1>
       <div class="center" layout = "row" >
         <img src="images/textsep.svg" alt="">
@@ -54,16 +54,89 @@
       <div class="center" layout = "row" >
         <img src="images/textsep.svg" alt="">
       </div>
+      <ul ng-repeat = "x in chances">
+        <li>{{x}}</li>
+
+      </ul>
 
     </div>
   </section>
 
 
   <section id = "contact">
-    <h1>or bhai</h1>
+    <div class="custom-card2" layout-align = "center center">
+      <h1>Contact Us</h1>
+      <div class="center" layout = "row" >
+        <img src="images/textsep.svg" alt="">
+      </div>
+      <div  layout = "row" >
+        <div class="center" flex = "33">
+          <h2>Aishwarya Smriti</h2>
+          <p>Email:</p>
+          <p>Phone No:</p>
+
+        </div>
+        <div class="center" flex = "33" >
+          <h2>Aishwarya Smriti</h2>
+          <p>Email:</p>
+          <p>Phone No:</p>
+        </div>
+        <div class="center" flex = "33" >
+          <h2>Aishwarya Smriti</h2>
+          <p>Email:</p>
+          <p>Phone No:</p>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <section id = "">
-    <h1>or bhai</h1>
+  <section id = "register">
+    <div class="custom-card2 " layout = "row">
+      <div class="valign-wrapper" flex = "60" flex-offset = "10">
+        <span>Please note that Rendezvous will not post on your behalf</span>
+      </div>
+
+      <div class="" flex = "30">
+        <div class="center" layout = "row" layout-align = "center center">
+          <a class="btn">
+            Register Via Facebok
+          </a>
+        </div>
+
+        <div class="center" layout = "row" layout-align = "center center">
+          <a class="btn">
+            Register Via Facebok
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id = "social">
+    <div class="custom-card2" layout ="column" layout-align = "center center">
+      <h1>We are Social</h1>
+      <div class="" layout = "row" layout-align = "center center">
+        <div class="" flex = "25">
+            <a href=""><img src="images/Fb.svg" alt=""></a>
+        </div>
+        <div class="" flex = "25">
+            <a href=""><img src="images/Twitter.svg" alt=""></a>
+        </div>
+
+        <div class="" flex = "25">
+            <a href=""><img src="images/Youtube.svg" alt=""></a>
+        </div>
+
+        <div class="" flex = "25">
+            <a href=""><img src="images/Instagram.svg" alt=""></a>
+        </div>
+
+      </div>
+
+    </div>
+
+
   </section>
 </div>

@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngMaterial','ngAnimate','ngRoute']);
+var app = angular.module('app', ['ngMaterial','ngAnimate','ngRoute','angular-scroll-animate','duScroll']);
 
 app.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
   $routeProvider.when("/", {
