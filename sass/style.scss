@@ -331,6 +331,20 @@ body{
 
 }
 
+.custom-card1{
+    background: #ffffff;
+    z-index: 10;
+    font-size: 16px;
+    line-height: 27px;
+    color: #9da6b8;
+    font-family: $open-sans;
+    padding: 24px;
+    font-weight: 300;
+    min-height: 64vh;
+    box-shadow: 0 2px 5px 0 #E0E0E0;
+
+}
+
 #about{
   padding: 72px 15px 15px 15px;
 
@@ -340,6 +354,25 @@ body{
   }
 
   .about-text{
+    font-size: 24px;
+    font-family: $open-sans-condensed;
+    line-height: 36px;
+    color: $text-color;
+  }
+}
+
+.home{
+  background-color: $home-background;
+}
+
+#incentives{
+
+  padding: 15px;
+  img{
+    margin: 0 auto;
+  }
+
+  .inc-text{
     font-size: 24px;
     font-family: $open-sans-condensed;
     line-height: 36px;
