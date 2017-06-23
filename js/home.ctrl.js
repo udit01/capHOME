@@ -1,13 +1,13 @@
 app.controller('HomeCtrl', function($scope,$document,$timeout, $mdSidenav, $log) {
 
 $scope.chances = [
-          "Chance to meet international artists",
-          "RDV Merchandise and Pronite passes",
-          "The coveted Campus Ambassador Certificate authenticating your work for Rendezvous, IIT Delhi",
-          "Discount coupons for eating joints",
-          "Exposure",
-          "Internship opportunity Look at possiblities",
-          "Passes and discount coupons as per marketing deals"
+          "Once in a lifetime opportunity to meet celebrated international artists",
+          "Exclusive Rendezvous merchandise and Rendezvous Pronite passes",
+          "The coveted Campus Ambassador Certificate in recognition for your contribution to Rendezvous, IIT Delhi",
+          "Huge discount coupons for our irresistible food joints and more",
+          "Unique chance to hone your communication and people skills by interacting with people from colleges across India",
+          "Exciting Internship opportunities for promising Campus Ambassadors",
+          "Prizes galore including coupons, goodies and lots more awarded regularly"
 ];
 
 $scope.animation = {};
