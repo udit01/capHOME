@@ -1,296 +1,131 @@
+@charset "UTF-8";
 @import "compass";
+@import "partials/normalize";
 @import "partials/variables";
 
-body {
-  background-color: $home-background;
+body,html{
+  font-size: 14px;
+  overflow-x: hidden;
 }
 
+*:focus {
+    outline: none !important;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $home-background;
+  font-family: $open-sans-condensed;
+  color: $text-color;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
 .not-visible {
   visibility: hidden;
 }
-@media only screen and (max-width: 992px) {
-  .hide-on-med-and-down {
-    display: none !important;
-  }
+.button{
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  margin: 2rem;
+  box-shadow: 0 3px 15px 0 rgba(0,0,0,.25);
+  font-size: 14px;
+  width: 150px;
+  color: #f3a0a7;
+  background-color: $white;
+  border-radius: 4px;
+  font-family: $montserrat;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: box-shadow 200ms ease-out;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
-
-.valign-wrapper {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
+// container from bootstrap
 .container {
-  position: relative;
-  margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
+  margin-left: auto;
   padding-left: 15px;
-}
-@media (min-width: 576px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: $xs-break) {
+      width: 750px;
+  }
+  @media screen and (min-width: $md-break) {
+    width: 970px;
+  }
+  @media screen and (min-width: $lg-break) {
+    width: 1170px;
+  }
+  @media screen and (min-width: $xl-break) {
+    width: 1400px;
   }
 }
-@media (min-width: 768px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-@media (min-width: 576px) {
-  .container {
-    width: 540px;
-    max-width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    width: 720px;
-    max-width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 960px;
-    max-width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1140px;
-    max-width: 100%;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .hide-on-med-and-down {
-    display: none !important;
-  }
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .center {
   text-align: center;
 }
 
-.test {
-  border: 1px solid red;
+// index.html starts from here
+.ngview{
+  position:relative;
+  top: 117px;
 }
-
-.home-main {
-  min-height: 100vh;
-  background-image: url('../images/back.png');
-  background-size: cover;
-  background-position: center;
-
+.ngview.home{
+  top: 0px;
 }
-
-.logo-row {
-  padding: 56px 100px;
-
-  .logo-right {
-    text-align: right;
-
-    .right-box {
-      border-style: solid;
-      border-color: #FFFFFF;
-      border-color: rgba(255, 255, 255, 1);
-      border-width: 2px;
-      width: 152px;
-      height: 296px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-      padding: 15px;
-      position: relative;
-      margin: auto;
-
-      span {
-        position: absolute;
-        bottom: 10px;
-        left: 0;
-        font-weight: 400;
-        font-family: $comfortaa;
-        color: $white;
-        line-height: 200%;
-        font-size: 16px;
-        text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-      }
-
-      img {
-        margin: 0 auto;
-      }
-    }
-    @media only screen and (min-width: 600px) and (max-width: 992px) {
-      .right-box {
-        width: 142px;
-        height: 276px;
-      }
-    }
-    @media only screen and (max-width: 599px) {
-      .right-box {
-        width: 132px;
-        height: 236px;
-      }
-    }
-  }
-
-  .logo-left {
-    span {
-      font-size: 24px;
-      color: $white;
-      font-family: $comfortaa;
-      margin: 15px 0;
-    }
-
-    h1 {
-      font-size: 72px;
-      margin: 15px 0;
-      text-transform: uppercase;
-      color: $white;
-      text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-      font-family: $comfortaa;
-    }
-    @media only screen and (min-width: 600px) and (max-width: 992px) {
-      h1 {
-        font-size: 50px;
-      }
-    }
-    @media only screen and (max-width: 599px) {
-      h1 {
-        font-size: 30px !important;
-      }
-    }
-  }
-  @media only screen and (max-width: 599px) {
-    .logo-left {
-      text-align: center;
-    }
-  }
-}
-@media only screen and (max-width: 599px) {
-  .logo-row {
-    padding: 10px;
-  }
-}
-
-.register-button {
-  .button-above {
-    border: 2px solid $white;
-    width: 265px;
-    height: 73px;
-    padding: 5px 3px;
-    color: #ffffff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-
-    a {
-      border: 2px solid $white;
-      height: 100%;
-      width: 100%;
-      font-size: 26px;
-      font-family: $comfortaa;
-      color: $white;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-      text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-    }
-  }
-  @media only screen and (min-width: 600px) and (max-width: 992px) {
-    .button-above {
-      width: 200px;
-      height: 65px;
-    }
-  }
-  @media only screen and (max-width: 599px) {
-    .button-above {
-      width: 180px;
-      height: 50px;
-    }
-  }
-}
-
-.down-arrow {
-  margin-top: 10vh;
-}
-#faqButton{
-  display: none;
-}
-@media only screen and (min-width: 600px) and (max-width: 992px) {
-  .down-arrow {
-    margin-top: 15vh;
-    display: none;
-  }
-  #faqButton{
-    display: block;
-    margin: 0 auto;
-    align-self: center;
-    // border: black 5px solid;
-  }
-}
-@media only screen and (max-width: 599px) {
-  .down-arrow {
-    margin-top: 5vh;
-    display: none;
-  }
-
-  .register-button {
-    margin-top: 3vh;
-  }
-  #faqButton{
-    display: block;
-    margin: auto;
-
-  }
-}
-/////////////////////////////////////////////////HOME PAGE CSS
 .nav-bar {
   min-height: 56px;
   height: auto;
   position: fixed;
   width: 100%;
-  font-family: "Varela Round", sans-serif;
-  z-index: 999;
+  font-family: $varela;
+  z-index: 2;
   background: #3949AB;
-
+  .fa-bars{
+    font-size: 28px;
+    color: $white;
+    margin:1rem;
+  }
   ul {
     list-style-type: none;
     padding: 5px;
     margin: 0 auto;
-  }
-
-  ul li {
-    float: left;
-    padding: 10px 5%;
-    text-transform: uppercase;
-    color: #C6DFF8;
-    // color:black;
-    font-weight: 500;
-    // margin: 0 1%;
-    // padding: 10 5%;
-  }
-
-  ul li:hover {
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #6b1be2;
-  }
-
-  .navListItem a {
-    color: white;
-    text-decoration: none;
+   li {
+      float: left;
+      padding: 10px 5%;
+      text-transform: uppercase;
+      color: #C6DFF8;
+      // color:black;
+      font-weight: 500;
+      // margin: 0 1%;
+      // padding: 10 5%;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      &:hover {
+        color: #ffffff;
+        cursor: pointer;
+        background-color: #6b1be2;
+      }
+    }
   }
   // .navImage{
   //   max-height: 20%;
@@ -300,159 +135,209 @@ body {
   }
 }
 
-.custom-card {
-  background: #ffffff;
-  z-index: 10;
-  font-size: 16px;
-  line-height: 27px;
-  color: #9da6b8;
-  font-family: $open-sans;
-  padding: 24px;
-  font-weight: 300;
-  height: 64vh;
-  box-shadow: 0 2px 5px 0 #E0E0E0;
+// sidenav
+md-sidenav{
+  font-family: $varela;
+  .header{
+    background: #3949AB;
+    img{
+      padding: 24px;
+    }
+  }
+  ul li{
+    padding: .5rem;
+    a{
+      font-size: 20px;
+      text-decoration: none;
+    }
+  }
 }
 
-.custom-card1 {
-  background: #ffffff;
-  z-index: 10;
-  font-size: 16px;
-  line-height: 27px;
-  color: #9da6b8;
-  font-family: $open-sans;
-  padding: 24px;
-  font-weight: 300;
-  min-height: 64vh;
-  box-shadow: 0 2px 5px 0 #E0E0E0;
-}
 
-.custom-card2 {
-  background: #ffffff;
-  z-index: 10;
-  font-size: 16px;
-  line-height: 27px;
-  color: #9da6b8;
-  font-family: $open-sans;
-  padding: 24px;
-  font-weight: 300;
-  min-height: 30vh;
-  box-shadow: 0 2px 5px 0 #E0E0E0;
+// home.html starts from here
+md-card{
+  padding: 3rem 1.2rem;
 }
-
 #about {
-  padding: 72px 15px 15px;
-
-  img {
-    height: 100%;
-  }
-
-  .about-text {
-    font-size: 24px;
-    font-family: $open-sans-condensed;
-    line-height: 36px;
-    color: $text-color;
-  }
-
-  h1 {
-    font-size: 36px;
-    color: $text-color;
-    font-family: $open-sans-condensed;
-    text-align: left !important;
+  md-card{
+    .left{
+      @media screen and (min-width: 960px) {
+        float: left;
+        padding: 24px;
+        max-width: 450px;
+        img{
+          max-width: 420px;
+          height: auto;
+        }
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .right{
+      h1{
+        margin-bottom: 0;
+        text-align: center;
+      }
+      img{
+        margin: 1rem auto;
+      }
+      span{
+        font-size: 20px;
+        line-height: 36px;
+      }
+      @media screen and (min-width: 960px) {
+        float: right;
+        max-width: calc(100% - 450px);
+        padding: 24px;
+        h1{
+          margin: 0 auto;
+          text-align: left !important;
+        }
+        img{
+          margin: 1rem 0;
+        }
+      }
+    }
   }
 }
-
-.home {
-  background-color: $home-background;
-}
-
 #incentives {
-  padding: 15px;
-
+  margin: 2rem auto;
+  @media screen and (max-width: 960px) {
+    h1{
+      text-align: center;
+    }
+  }
+  md-card{
+    overflow: hidden;
+  }
+  h1{
+    margin-bottom: 0;
+  }
   img {
-    margin: 0 auto;
+    margin: 1rem auto;
   }
-
-  .inc-text {
-    font-size: 24px;
-    font-family: $open-sans-condensed;
+  p{
+    font-size: 20px;
     line-height: 36px;
-    color: $text-color;
-    // text-align: center;
-    // margin: auto;
+    max-width: 1000px;
+    text-align: center;
   }
-
   ul {
-    font-size: 24px;
-    font-family: $open-sans-condensed;
+    font-size: 20px;
     line-height: 36px;
-    color: $text-color;
   }
-  .faqLine{
+  .faqline{
     text-align: center !important;
     margin: 0 auto;
-    // padding: 5px center;
-
+    a{
+      text-decoration: none;
+    }
   }
 }
 
-h1,
-h2 {
-  text-align: center;
-  color: $text-color;
-  font-family: $open-sans-condensed;
-}
 
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 30px;
-}
 
 #contact {
+  .wrapper{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  h1{
+    margin-bottom: 0;
+  }
   img {
-    margin: 0 auto;
+    margin: 1rem auto;
   }
-
+  h2{
+    font-size: 24px;
+  }
   p {
-    color: $text-color;
-    font-family: $open-sans-condensed;
-    font-size: 26px;
-    line-height: 50%;
+    font-size: 20px;
   }
-  padding: 15px;
 }
 
 #register {
   padding: 15px;
-
   span {
     font-size: 36px;
-    color: $text-color;
-    font-family: $open-sans-condensed;
   }
-
   .btn {
     border: 2px solid orange;
     padding: 15px;
     font-size: 36px;
-    color: $text-color;
-    font-family: $open-sans-condensed;
     margin: 15px;
   }
 }
-
 #social {
-  padding: 15px;
+  padding: 16px;
   .socialList{
-    margin:auto;
+    margin-bottom: 2rem;
+    img{
+      height: 100px;
+      width: 100px;
+      margin: auto 2rem;
+    }
   }
 }
 
-.textSep{
-  // border-style : Solid;
-	// border-color : #3D405B;
-	// border-color : rgba(61, 64, 91, 1);
-	// border-width : 1px;
+
+
+
+// main.html starts from here
+.home-main {
+  min-height: 100vh;
+  background: $white;
+  background: linear-gradient(rgba(254, 149, 102, 0.6), rgba(255, 112, 96, 0.6)), url('../images/back.png') no-repeat center;
+  background-size: cover;
+  background-position: center;
+  .header-wrapper{
+    height:100vh;
+    font-family: $montserrat;
+    span{
+      font-size: 1.4rem;
+      color: white;
+    }
+    h1{
+      font-size: 3rem;
+      color: white;
+    }
+    .down-arrow{
+      position: absolute;
+      bottom: 50px;
+      animation-name: stretch;
+      animation-duration: 1s;
+      animation-timing-function: ease-in;
+      animation-delay: 0;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-play-state: running;
+    }
+  }
+}
+@keyframes stretch {
+  0% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+
+.logo-right{
+  border: 1px solid white;
+  padding: 16px;
+  max-width: 150px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  span{
+    margin: 1rem auto;
+    font-size:1rem !important;
+    text-align: center;
+  }
 }

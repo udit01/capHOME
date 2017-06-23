@@ -10,19 +10,36 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" type="text/css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   </head>
   <body ng-app="app" ng-controller="MainCtrl">
-
-    <div data-ng-view = "" ng-cloak>
-
-
-
-
+    <!-- ngview is here -->
+    <nav class="nav-bar center md-whiteframe-2dp"  ng-hide="isPath('/')">
+      <i class="fa fa-bars" hide-gt-sm ng-click="toggleLeft()" aria-hidden="true"></i>
+      <ul class="center " hide-sm hide-xs layout="row" layout-align="center center">
+        <li><a href="/#!/home/#about" du-smooth-scroll du-scrollspy>About Us</a></li>
+        <li><a href="/#!/home/#incentives" du-smooth-scroll du-scrollspy>Incentives</a></li>
+        <li class="navImage"><a href="http://rdv-iitd.com/" du-smooth-scroll du-scrollspy><img class="img-responsive" src="images/RDVlogo.svg" alt=""></a></li>
+        <li><a href="/#!/home/#contact" du-smooth-scroll du-scrollspy>Contact Us</a></li>
+        <li><a href="/#!/home/#social" du-smooth-scroll du-scrollspy>SocialPlatforms</a></li>
+      </ul>
+    </nav>
+    <!-- sidenav -->
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+      <div class="header" layout="column" layout-align="center center">
+        <a href="http://rdv-iitd.com/" du-smooth-scroll du-scrollspy><img class="img-responsive" src="images/RDVlogo.svg" alt=""></a>
+      </div>
+      <md-content layout-margin>
+        <ul layout="column" layout-align="center center">
+          <li><a href="/#!/home/#about" ng-click="toggleLeft()" du-smooth-scroll du-scrollspy>About Us</a></li>
+          <li><a href="/#!/home/#incentives" ng-click="toggleLeft()" du-smooth-scroll du-scrollspy>Incentives</a></li>
+          <li><a href="/#!/home/#contact" ng-click="toggleLeft()" du-smooth-scroll du-scrollspy>Contact Us</a></li>
+          <li><a href="/#!/home/#social" ng-click="toggleLeft()" du-smooth-scroll du-scrollspy>SocialPlatforms</a></li>
+        </ul>
+      </md-content>
+    </md-sidenav>
+    <div class="ngview" ng-class="{'home':isPath('/')}" data-ng-view = "" ng-cloak>
   </body>
-
-
-
   <!-- scripts -->
   <script type='text/javascript' src="bower_components/angular/angular.min.js"></script>
   <script type='text/javascript' src="bower_components/angular-route/angular-route.min.js"></script>
@@ -30,13 +47,10 @@
   <script type='text/javascript' src="bower_components/angular-animate/angular-animate.min.js"></script>
   <script type='text/javascript' src="bower_components/angular-aria/angular-aria.min.js"></script>
   <script type='text/javascript' src="bower_components/angular-messages/angular-messages.min.js"></script>
-  <script src="bower_components/angular-touch/angular-touch.js"></script>
-  <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
-  <script src="bower_components/angular-scroll-animate/dist/angular-scroll-animate.js"></script>
-  <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+  <script type='text/javascript' src="bower_components/angular-touch/angular-touch.js"></script>
+  <script type='text/javascript' src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+  <script type='text/javascript' src="bower_components/angular-scroll-animate/dist/angular-scroll-animate.js"></script>
+  <script type='text/javascript' src="bower_components/angular-scroll/angular-scroll.js"></script>
   <script type='text/javascript' src="main.js"></script>
   <script type='text/javascript' src="js/cap.js"></script>
-
-
-
 </html>

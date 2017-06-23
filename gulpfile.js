@@ -32,10 +32,6 @@ gulp.task('build-fonts', function () {
   return gulp.src('fonts/**')
     .pipe(gulp.dest('dist/fonts'));
 });
-gulp.task('build-php', function () {
-  return gulp.src('php/**')
-    .pipe(gulp.dest('dist/php'));
-});
 gulp.task('build-templates', function () {
   return gulp.src('templates/*.html')
     .pipe(gulp.dest('dist/templates/'));
@@ -74,9 +70,6 @@ gulp.task('compass-watch', function () {
 gulp.task('watch-html', function() {
   gulp.watch('templates/*.html', ['build-templates']);
 });
-gulp.task('watch-php', function() {
-  gulp.watch('php/*.php', ['build-php']);
-});
 gulp.task('watch-root', function() {
   gulp.watch(['index.html','main.js'], ['build-root']);
 });
@@ -96,12 +89,12 @@ gulp.task('jshint', function() {
 
 // default task
 gulp.task('default', function() {
-  return runSequence('clean', 'build-root','build-templates', 'build-fonts','build-sourcejs','build-php', 'jshint', 'build-images', 'build-bower-lib','compass-build',
-    ['watch-js', 'watch-css', 'watch-html','watch-root','watch-php','compass-watch','connect']
+  return runSequence('clean', 'build-root','build-templates', 'build-fonts','build-sourcejs', 'jshint', 'build-images', 'build-bower-lib','compass-build',
+    ['watch-js', 'watch-css', 'watch-html','watch-root','compass-watch','connect']
   );
 });
 
 // task to run in production
 gulp.task('build-prod', function() {
-  return runSequence('clean', 'build-root', 'build-sourcejs', 'build-customcss', 'compass-build', 'build-php', 'build-templates', 'build-fonts', 'build-images','build-bower-lib');
+  return runSequence('clean', 'build-root', 'build-sourcejs', 'build-customcss', 'compass-build', 'build-templates', 'build-fonts', 'build-images','build-bower-lib');
 });
