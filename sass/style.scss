@@ -359,6 +359,8 @@ body {
     font-family: $open-sans-condensed;
     line-height: 36px;
     color: $text-color;
+    // text-align: center;
+    // margin: auto;
   }
 
   ul {
@@ -366,6 +368,12 @@ body {
     font-family: $open-sans-condensed;
     line-height: 36px;
     color: $text-color;
+  }
+  .faqLine{
+    text-align: center !important;
+    margin: 0 auto;
+    // padding: 5px center;
+
   }
 }
 

@@ -338,6 +338,10 @@ body {
   line-height: 36px;
   color: #3D405B;
 }
+#incentives .faqLine {
+  text-align: center !important;
+  margin: 0 auto;
+}
 
 h1,
 h2 {
