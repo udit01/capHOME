@@ -1,60 +1,61 @@
-<div class="home" ng-controller = "HomeCtrl">
-  <nav class="nav-bar valign-wrapper hide-on-med-and-down">
-      <ul>
-        <li><a href = "/#!/home/#about" du-smooth-scroll du-scrollspy>Home</a></li>
-        <li><a href = "/#!/home/#incentives" du-smooth-scroll du-scrollspy>Home</a></li>
-        <li><a href = "/#!/home/#contact" du-smooth-scroll du-scrollspy>Home</a></li>
+<div class="home" ng-controller="HomeCtrl">
+  <nav class="nav-bar center hide-on-med-and-down ">
+    <ul class="center " layout="row" layout-align="center center">
+      <li class="navListItem "><a href="/#!/home/#about" du-smooth-scroll du-scrollspy>About Us</a></li>
+      <li class="navListItem "><a href="/#!/home/#incentives" du-smooth-scroll du-scrollspy>Incentives</a></li>
+      <li class="navListItem  navImage"><a href="/#!" du-smooth-scroll du-scrollspy><img class="img-responsive" src="images/RDVlogo.svg" alt=""></a></li>
+      <li class="navListItem "><a href="/#!/home/#contact" du-smooth-scroll du-scrollspy>Contact Us</a></li>
+      <li class="navListItem "><a href="/#!/home/#register" du-smooth-scroll du-scrollspy>Register/Login</a></li>
 
-      </ul>
+    </ul>
   </nav>
 
-  <section id = "about">
+  <section id="about">
 
-      <div class="custom-card" layout = "row" layout-wrap layout-xs = "column">
-        <div class="not-visible" when-visible="ElementIn" flex = "40">
-          <img src="images/guitar.png" alt="">
+    <div class="custom-card" layout="row" layout-wrap layout-xs="column">
+      <div class="not-visible" when-visible="ElementIn" flex="40">
+        <img src="images/guitar.png" alt="">
+      </div>
+      <div class=" not-visible" when-visible="ElementIn" flex="60">
+        <h1>About Us</h1>
+        <div class="" layout="row">
+          <img src="images/textsep.svg" alt="">
         </div>
-        <div class=" not-visible" when-visible="ElementIn" flex = "60">
-          <h1>About Us</h1>
-          <div class="" layout = "row">
-            <img src="images/textsep.svg" alt="">
-          </div>
-          <div class="about-text" layout = "row">
-            Rendezvous is the annual cultural fest of IIT-Delhi. Started in 1976 by a bunch of enthusiastic IITians with a unique vision to encourage cultural exchange and celebrate the passion within, RDV has grown to become North India&#39;s largest college
-            cultural festival, drawing a footfall of over 50,000 from 350 colleges all over the country
-          </div>
-          <br>
-          <br>
-          <div class="about-text" layout ="row">
-            Rendezvous is the inimitable product of Delhi&#39;s unique lust for life and BRCA&#39;s proverbial tendency for excellence. It is a 4 day extravaganza with equal parts of awesomeness in organisation and turnout. Having hosted performers such as
-            Arijit Singh, Shankar Ehsaan Loy, Kay Kay, Farhan Akhtar, Vishal Shekhar, and Hoobastank in the past, Rendezvous 2017 promises to be even bigger and better than ever
-          </div>
+        <div class="about-text" layout="row">
+          Rendezvous is the annual cultural fest of IIT-Delhi. Started in 1976 by a bunch of enthusiastic IITians with a unique vision to encourage cultural exchange and celebrate the passion within, RDV has grown to become North India&#39;s largest college cultural
+          festival, drawing a footfall of over 50,000 from 350 colleges all over the country
+        </div>
+        <br>
+        <br>
+        <div class="about-text" layout="row">
+          Rendezvous is the inimitable product of Delhi&#39;s unique lust for life and BRCA&#39;s proverbial tendency for excellence. It is a 4 day extravaganza with equal parts of awesomeness in organisation and turnout. Having hosted performers such as Arijit
+          Singh, Shankar Ehsaan Loy, Kay Kay, Farhan Akhtar, Vishal Shekhar, and Hoobastank in the past, Rendezvous 2017 promises to be even bigger and better than ever
         </div>
       </div>
+    </div>
 
   </section>
 
-  <section id = "incentives" layout-align = "center center">
-    <div class="custom-card1" >
+  <section id="incentives" layout-align="center center">
+    <div class="custom-card1">
       <h1 class="not-visible" when-visible="ElementIn">What is College Ambassador Program?</h1>
-      <div class="center" layout = "row" >
+      <div class="center" layout="row">
         <img src="images/textsep.svg" alt="">
       </div>
-      <div class=" not-visible center inc-text" when-visible="ElementIn" layout = "row">
-        The Campus Ambassadors Program (CAP) is the premier publicity program of RDV and provides an opportunity to students from colleges all over India to get involved in the making of North India&#39;s largest college fest. Campus Ambassadors serve as
-          the face of Rendezvous in their college and get hands on experience in institute level coordination, fest organization, teamwork, event management and media relations.
-          <br>
-          Little to give, so much to gain!
+      <div class=" not-visible center inc-text" when-visible="ElementIn" layout="row">
+        The Campus Ambassadors Program (CAP) is the premier publicity program of RDV and provides an opportunity to students from colleges all over India to get involved in the making of North India&#39;s largest college fest. Campus Ambassadors serve as the
+        face of Rendezvous in their college and get hands on experience in institute level coordination, fest organization, teamwork, event management and media relations.
+        <br> Little to give, so much to gain!
       </div>
-      <div class=" not-visible inc-text" when-visible="ElementIn" layout = "row">
+      <div class=" not-visible inc-text" when-visible="ElementIn" layout="row">
         For details check FAQs Section
       </div>
 
       <h1>What's in it for you?</h1>
-      <div class=" center" layout = "row" >
+      <div class=" center" layout="row">
         <img src="images/textsep.svg" alt="">
       </div>
-      <ul class="not-visible" when-visible="ElementIn" ng-repeat = "x in chances">
+      <ul class="not-visible" when-visible="ElementIn" ng-repeat="x in chances">
         <li>{{x}}</li>
 
       </ul>
@@ -63,26 +64,26 @@
   </section>
 
 
-  <section id = "contact">
-    <div class="custom-card2" layout-align = "center center">
+  <section id="contact">
+    <div class="custom-card2" layout-align="center center">
       <h1 class="not-visible" when-visible="ElementIn">Contact Us</h1>
-      <div class="center" layout = "row" >
+      <div class="center" layout="row">
         <img src="images/textsep.svg" alt="">
       </div>
-      <div class = "not-visible" when-visible="ElementIn" layout = "row" >
-        <div class="center" flex = "33">
+      <div class="not-visible" when-visible="ElementIn" layout="row">
+        <div class="center" flex="33">
           <h2>Aishwarya Smriti</h2>
           <p>Email:</p>
           <p>Phone No:</p>
 
         </div>
-        <div class="center" flex = "33" >
-          <h2>Aishwarya Smriti</h2>
+        <div class="center" flex="33">
+          <h2>Aditya</h2>
           <p>Email:</p>
           <p>Phone No:</p>
         </div>
-        <div class="center" flex = "33" >
-          <h2>Aishwarya Smriti</h2>
+        <div class="center" flex="33">
+          <h2>Anirban</h2>
           <p>Email:</p>
           <p>Phone No:</p>
         </div>
@@ -91,22 +92,22 @@
     </div>
   </section>
 
-  <section id = "register">
-    <div class="custom-card2 " layout = "row">
-      <div class="valign-wrapper not-visible" when-visible="ElementIn" flex = "60" flex-offset = "10">
+  <section id="register">
+    <div class="custom-card2 " layout="row">
+      <div class="valign-wrapper not-visible" when-visible="ElementIn" flex="60" flex-offset="10">
         <span>Please note that Rendezvous will not post on your behalf</span>
       </div>
 
-      <div class="not-visible" when-visible="ElementIn" flex = "30">
-        <div class="center" layout = "row" layout-align = "center center">
+      <div class="not-visible test" layout="column" when-visible="ElementIn" flex="30">
+        <div class="center" layout="row" layout-align="center center">
           <a class="btn">
             Register Via Facebok
           </a>
         </div>
 
-        <div class="center" layout = "row" layout-align = "center center">
-          <a class="btn">
-            Register Via Facebok
+        <div class="center" layout="row" layout-align="center center">
+          <a class="btn" >
+            <span style="padding-left:40px;padding-right:40px;">Login</span>
           </a>
         </div>
       </div>
@@ -114,23 +115,23 @@
     </div>
   </section>
 
-  <section id = "social">
-    <div class="custom-card2" layout ="column" layout-align = "center center">
+  <section id="social" >
+    <div class="custom-card2" layout="column" layout-align="center center">
       <h1>We are Social</h1>
-      <div class="" layout = "row" layout-align = "center center">
-        <div class="" flex = "25">
-            <a href=""><img src="images/Fb.svg" alt=""></a>
+      <div class="socialList test" layout="row" layout-align="center center">
+        <div class="test" flex="25">
+          <a href=""><img src="images/Fb.svg" alt=""></a>
         </div>
-        <div class="" flex = "25">
-            <a href=""><img src="images/Twitter.svg" alt=""></a>
-        </div>
-
-        <div class="" flex = "25">
-            <a href=""><img src="images/Youtube.svg" alt=""></a>
+        <div class="test" flex="25">
+          <a href=""><img src="images/Twitter.svg" alt=""></a>
         </div>
 
-        <div class="" flex = "25">
-            <a href=""><img src="images/Instagram.svg" alt=""></a>
+        <div class="test" flex="25">
+          <a href=""><img src="images/Instagram.svg" alt=""></a>
+        </div>
+
+        <div class="test" flex="25">
+          <a href=""><img src="images/Youtube.svg" alt=""></a>
         </div>
 
       </div>
