@@ -1,5 +1,5 @@
 {
-  "name": "capHOME",
+  "name": "cap-home",
   "homepage": "https://github.com/udit01/capHOME",
   "authors": [
     "Korku02 <korkudeepak@gmail.com>"
@@ -20,8 +20,6 @@
     "angular-scroll-animate": "^0.9.9",
     "angular-route": "^1.6.4",
     "angular-scroll": "^1.0.2",
-    "angular": "angularjs#^1.6.4",
-    "themify-icons": "^0.1.2",
-    "slick-carousel": "^1.6.0"
+    "angular": "^1.6.4"
   }
 }
