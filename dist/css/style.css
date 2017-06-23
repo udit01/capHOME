@@ -253,6 +253,7 @@ body {
 }
 .nav-bar .navListItem a {
   color: white;
+  text-decoration: none;
 }
 .nav-bar .isActive {
   background-color: #330538;
