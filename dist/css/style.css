@@ -90,7 +90,7 @@ body {
 }
 
 .home-main {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../images/back.png");
   background-size: cover;
   background-position: center;
@@ -211,18 +211,35 @@ body {
   margin-top: 10vh;
 }
 
+#faqButton {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 992px) {
   .down-arrow {
     margin-top: 15vh;
+    display: none;
+  }
+
+  #faqButton {
+    display: block;
+    margin: 0 auto;
+    align-self: center;
   }
 }
 @media only screen and (max-width: 599px) {
   .down-arrow {
     margin-top: 5vh;
+    display: none;
   }
 
   .register-button {
     margin-top: 3vh;
+  }
+
+  #faqButton {
+    display: block;
+    margin: auto;
   }
 }
 .nav-bar {
