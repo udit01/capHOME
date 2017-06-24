@@ -307,6 +307,7 @@ md-card{
       animation-iteration-count: infinite;
       animation-fill-mode: none;
       animation-play-state: running;
+      width: 100%;
     }
   }
 }
@@ -325,13 +326,18 @@ md-card{
 .logo-right{
   border: 1px solid white;
   padding: 16px;
-  max-width: 150px;
+  max-width: 140px;
   position: fixed;
   top: 50px;
   right: 50px;
   span{
-    margin: 1rem auto;
+    // border: 1px solid red;
+    margin: 2rem auto;
     font-size:1rem !important;
     text-align: center;
   }
+}
+
+.test{
+  border: 1px solid red;
 }

@@ -11,5 +11,5 @@ app.controller('MainCtrl', function($scope, $document, $timeout, $mdSidenav, $lo
   }
   $scope.cancel=function() {
     $mdDialog.cancel();
-  }
+  };
 });
