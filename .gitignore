@@ -1,6 +1,4 @@
 node_modules
 assets
 .sass-cache
-bower_components
-package-lock.json
-dist
+
