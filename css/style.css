@@ -466,6 +466,7 @@ md-card {
 #incentives .faqline {
   text-align: center !important;
   margin: 0 auto;
+  font-size: 24px;
 }
 #incentives .faqline a {
   text-decoration: none;
@@ -515,8 +516,6 @@ a {
 }
 
 img {
-  height: 100px;
-  width: 100px;
   margin: auto 2rem;
   display: block;
   margin: 0 auto;
@@ -528,9 +527,10 @@ img {
   background: linear-gradient(rgba(254, 149, 102, 0.6), rgba(255, 112, 96, 0.6)), url("../images/back.png") no-repeat center;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 .home-main .header-wrapper {
-  height: 100vh;
+  padding: 10vh;
   font-family: "Montserrat", sans-serif;
 }
 .home-main .header-wrapper span {
@@ -543,8 +543,9 @@ img {
   text-align: center;
 }
 .home-main .header-wrapper .down-arrow {
-  position: absolute;
+  margin: auto 2rem;
   bottom: 50px;
+  margin-top: 5vh;
   animation-name: stretch;
   animation-duration: 1s;
   animation-timing-function: ease-in;
@@ -553,6 +554,9 @@ img {
   animation-fill-mode: none;
   animation-play-state: running;
   width: 100%;
+}
+.home-main .header-wrapper .down-arrow img {
+  margin: 0 auto;
 }
 
 @keyframes stretch {
@@ -570,9 +574,9 @@ img {
   border: 1px solid white;
   padding: 16px;
   max-width: 140px;
-  position: fixed;
   top: 50px;
   right: 50px;
+  margin-bottom: 30px;
 }
 .logo-right span {
   margin: 2rem auto;

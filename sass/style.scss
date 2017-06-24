@@ -149,6 +149,7 @@ md-sidenav{
     a{
       font-size: 20px;
       text-decoration: none;
+
     }
   }
 }
@@ -231,6 +232,7 @@ md-card{
   .faqline{
     text-align: center !important;
     margin: 0 auto;
+    font-size: 24px;
     a{
       text-decoration: none;
     }
@@ -279,8 +281,8 @@ md-card{
     margin: auto;
   }
   img{
-    height: 100px;
-    width: 100px;
+    // height: 100px;
+    // width: 100px;
     margin: auto 2rem;
     display:block;
     margin: 0 auto;
@@ -294,8 +296,10 @@ md-card{
   background: linear-gradient(rgba(254, 149, 102, 0.6), rgba(255, 112, 96, 0.6)), url('../images/back.png') no-repeat center;
   background-size: cover;
   background-position: center;
+  position: relative;
   .header-wrapper{
-    height:100vh;
+    // height:100vh
+    padding: 10vh;
     font-family: $montserrat;
     span{
       font-size: 1.4rem;
@@ -308,8 +312,10 @@ md-card{
 
     }
     .down-arrow{
-      position: absolute;
+      // position: absolute;
+      margin: auto 2rem;
       bottom: 50px;
+      margin-top: 5vh;
       animation-name: stretch;
       animation-duration: 1s;
       animation-timing-function: ease-in;
@@ -317,7 +323,13 @@ md-card{
       animation-iteration-count: infinite;
       animation-fill-mode: none;
       animation-play-state: running;
-      width: 100%;
+      width:100%;
+
+
+
+      img{
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -337,9 +349,11 @@ md-card{
   border: 1px solid white;
   padding: 16px;
   max-width: 140px;
-  position: fixed;
+  // position: fixed;
   top: 50px;
   right: 50px;
+  // margin: 5% auto;
+  margin-bottom: 30px;
   span{
     // border: 1px solid red;
     margin: 2rem auto;
