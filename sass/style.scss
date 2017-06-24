@@ -270,12 +270,20 @@ md-card{
   padding: 16px;
   .socialList{
     margin-bottom: 2rem;
-    img{
-      height: 100px;
-      width: 100px;
-      margin: auto 2rem;
+    width: 80%;
+
     }
   }
+  a{
+    display: block;
+    margin: auto;
+  }
+  img{
+    height: 100px;
+    width: 100px;
+    margin: auto 2rem;
+    display:block;
+    margin: 0 auto;
 }
 
 
@@ -296,6 +304,8 @@ md-card{
     h1{
       font-size: 3rem;
       color: white;
+      text-align: center;
+
     }
     .down-arrow{
       position: absolute;

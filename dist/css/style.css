@@ -506,11 +506,20 @@ md-card {
 }
 #social .socialList {
   margin-bottom: 2rem;
+  width: 80%;
 }
-#social .socialList img {
+
+a {
+  display: block;
+  margin: auto;
+}
+
+img {
   height: 100px;
   width: 100px;
   margin: auto 2rem;
+  display: block;
+  margin: 0 auto;
 }
 
 .home-main {
@@ -531,6 +540,7 @@ md-card {
 .home-main .header-wrapper h1 {
   font-size: 3rem;
   color: white;
+  text-align: center;
 }
 .home-main .header-wrapper .down-arrow {
   position: absolute;
